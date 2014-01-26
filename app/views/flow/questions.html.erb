@@ -1,0 +1,135 @@
+<html>
+<head>
+	
+</head>
+
+<body>
+
+<!-- <h1>Flow#questions</h1>
+<p>Find me in app/views/flow/questions.html.erb</p>
+
+ -->
+
+
+
+
+	<!-- TOP BAR -->
+	<div id="top-bar">
+		
+		<div class="page-full-width cf">
+
+			<ul id="nav" class="fr">
+	
+				<li><a href="#" class="round button menu-logoff image-left">  Log out </a></li>
+				<li ><a href="#" class="round button menu-user image-left ">Logged in as <strong><%= $username.capitalize %></strong></a>
+					<!-- <ul>
+						
+						
+					</ul>  -->
+				</li>
+			</ul><!-- end nav -->
+			
+				
+				
+				
+			 
+
+		<!-- 			
+			<form action="#" method="POST" id="search-form" class="fr">
+				<fieldset>
+					<input type="text" id="search-keyword" class="round button dark ic-search image-right" placeholder="Search..." />
+					<input type="hidden" value="SUBMIT" />
+				</fieldset>
+			</form> -->
+
+		</div> <!-- end full-width -->	
+	
+	</div> <!-- end top-bar -->
+
+
+
+<div class="pt-wrapper">
+    <div class="pt-trigger-container">
+        <button class="pt-trigger button round blue " data-animation="1" data-goto="-1">Next Page</button>
+        <button class="pt-trigger button round blue " data-animation="2" data-goto="-2">Previous</button>
+        <!-- <button class="pt-trigger" data-animation="59-60-61-62-63-64-65-66-67" data-goto="-1">Next page - random anims</button>
+        <button class="pt-trigger" data-animation="50-51-52-53-54-55-56-57-58" data-goto="-2">Previous page - random anims</button>
+        <button class="pt-trigger" data-animation="50" data-goto="1">Go to page 1</button>
+        <button class="pt-trigger" data-animation="51" data-goto="2">Go to page 2</button>
+        <button class="pt-trigger" data-animation="52" data-goto="1">Go to page 3</button> -->
+        <button class="pt-trigger button round blue " data-animation="53" data-goto="2">Go to page 4</button>
+<!--         <button class="pt-trigger" data-animation="58" data-goto="2">Go to page 5</button>
+        <button class="pt-trigger" data-animation="59-60-61-62-63-64-65-66-67" data-goto="1">Go to page 6</button> -->
+
+    </div>
+
+    <!--All Pages-->
+<!-- <div class="pt-page"> -->
+
+<% @challenge.each do |quest| %>
+    <div class="pt-page">
+	<h1>Question</h1>
+        
+
+        <h2> <%= quest.ques %> </h2>
+
+        <input type="radio" name="ch" value="ch1"><%= quest.ch1 %> <br>
+        <input type="radio" name="ch" value="ch2"><%= quest.ch2 %> <br>
+        <input type="radio" name="ch" value="ch3"><%= quest.ch3 %> <br> 
+        <input type="radio" name="ch" value="ch4"><%= quest.ch4 %> <br>
+<!-- 
+        <ul>
+        <li> <%= quest.ch1 %> </li>
+        <li> <%= quest.ch2 %> </li>
+        <li> <%= quest.ch3 %> </li>
+        <li> <%= quest.ch4 %> </li>
+
+        </ul> -->
+
+    </div>
+<% end %>
+
+
+
+<!-- **************************** QUESTION PAGE 2 **************************  -->
+    <!-- <div class="pt-page">
+        <h1><strong>Page 2</strong></h1>
+    </div>
+ -->
+
+
+
+
+<!-- </div> -->
+
+    <!-- <div class="pt-page pt-page-1">
+        <h1><strong>Page 1</strong></h1>
+    </div>
+    <div class="pt-page pt-page-2">
+        <h1><strong>Page 2</strong></h1>
+    </div>
+    <div class="pt-page pt-page-3">
+        <h1><strong>Page 3</strong></h1>
+    </div>
+    <div class="pt-page pt-page-4">
+        <h1><strong>Page 4</strong></h1>
+    </div>
+    <div class="pt-page pt-page-5">
+        <h1><strong>Page 5</strong></h1>
+    </div>
+    <div class="pt-page pt-page-6">
+        <h1><strong>Page 6</strong></h1>
+    </div> -->
+
+</div>
+
+
+
+<div class="pt-message">
+    <p>Your browser does not support CSS animations.</p>
+</div>
+
+</html>
+
+
+

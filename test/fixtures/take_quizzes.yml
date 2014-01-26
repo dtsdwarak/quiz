@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ques: MyString
+  ch1: MyString
+  ch2: MyString
+  ch3: MyString
+  ch4: MyString
+  ans: MyString
+
+two:
+  ques: MyString
+  ch1: MyString
+  ch2: MyString
+  ch3: MyString
+  ch4: MyString
+  ans: MyString

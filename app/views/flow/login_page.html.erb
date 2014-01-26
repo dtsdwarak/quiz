@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Brainfuck | Login to take the quiz</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+</head>
+
+<body>
+
+
+	
+
+	<!-- HEADER -->	
+	<div id="header">
+		
+		<div class="page-full-width cf">
+	
+			<div id="login-intro" class="fl" >
+			
+				<h1>Login to take the Quiz</h1>
+				<h5>Enter your credentials below</h5>
+				
+			</div> <!-- login-intro -->
+			
+				
+			
+			<!-- Change this image to your own company's logo -->
+			<!-- The logo will automatically be resized to 39px height. -->
+			<!-- <a href="#"  class="fr"><img src="images/twitter_question_mark.png"  alt="Blue Hosting" width="104" height="144" /></a>	-->
+					
+		</div> <!-- end full-width -->	
+	
+
+	</div> <!-- end header -->
+
+<br><br>
+	
+	<!-- MAIN CONTENT -->
+	<div id="content">
+	
+
+		<!-- <form action="#" method="POST" id="login-form"> -->
+
+<%= form_tag({:action => 'login_check'},{:id => 'login-form'}) do %>
+			<fieldset>
+
+				<p>
+					<label for="login-username">username</label>
+					<input type="text" id="login-username" name="login-username" class="round full-width-input" autofocus autocomplete="off"/>
+				</p>
+
+				<p>
+					<label for="login-password">password</label>
+					<input type="password" id="login-password" name="login-password" class="round full-width-input" autocomplete="off"/>
+				</p>
+				
+				<p>I've <a href="#">forgotten my password</a>.</p>
+				
+				<%= submit_tag 'Log In', :class =>'button round blue image-right ic-right-arrow' %>
+				<!-- <a href="#" class="button round blue image-right ic-right-arrow">LOG IN</a> -->
+
+			</fieldset>
+
+			<br/><div class="information-box round">Just click on the "LOG IN" button to continue, no login information required.</div>
+
+
+
+<!-- Login Error Popup -->
+	<% if flash[:sign_in_error] %>
+	<div class="error-box round" id="errorbox" >
+
+    <%= flash[:sign_in_error] %>
+
+	</div>
+	<% end %>
+	<!-- login error popup ends -->	
+
+
+
+		<!-- </form> -->
+<% end %>
+
+
+
+
+	
+	</div> <!-- end content -->
+
+
+	
+
+
+
+	
+	<!-- FOOTER -->
+	<div id="footer">
+
+		<p>&copy; Copyright 2013 <a href="http://www.dwarak.in" target="_blank">Dwarak</a>. All rights reserved.</p>
+
+	
+	</div> <!-- end footer -->
+
+
+	</body>
+	</html>

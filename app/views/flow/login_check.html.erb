@@ -1,0 +1,18 @@
+<%= @username %>
+<%= @password %>
+
+database availability check : <%= @auth %>
+
+<p> Database fetch </p>
+<ul>
+<% @db_value.each do |values| %>
+	<li> <%= values.users %> "with password" <%= values.pass %> </li>
+	<%end%>
+</ul>
+
+<!-- <br> <br>
+
+<%= @values %>
+<br> 
+<%= @db_value %>
+ -->
